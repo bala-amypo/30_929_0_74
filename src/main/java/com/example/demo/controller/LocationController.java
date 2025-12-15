@@ -14,6 +14,7 @@ import com.example.demo.service.LocationService;
 public class LocationController {
     LocationService lcs;
 
+     public LocationController
 
 @PostMapping("/locations")
   public Location addLocation(@RequestBody Location loc){
