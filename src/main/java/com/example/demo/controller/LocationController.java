@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +25,6 @@ public class LocationController {
 
   @GetMapping("/locations")
      public List<Location> getAll(){
-        return lcs.get
+        return lcs.getAllLocations();
      }
 }
