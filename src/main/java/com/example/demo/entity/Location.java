@@ -11,14 +11,14 @@ public class Location {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Double latiude;
+    private Double latitude;
     private Double longitude;
 public Location() {
     }
-public Location(Long id, String name, Double latiude, Double longitude) {
+public Location(Long id, String name, Double latitude, Double longitude) {
         this.id = id;
         this.name = name;
-        this.latiude = latiude;
+        this.latitude = latitude;
         this.longitude = longitude;
     }
 public Long getId() {
@@ -33,11 +33,11 @@ public String getName() {
 public void setName(String name) {
     this.name = name;
 }
-public Double getLatiude() {
-    return latiude;
+public Double getLatitude() {
+    return latitude;
 }
-public void setLatiude(Double latiude) {
-    this.latiude = latiude;
+public void setLatitude(Double latitude) {
+    this.latitude = latitude;
 }
 public Double getLongitude() {
     return longitude;
